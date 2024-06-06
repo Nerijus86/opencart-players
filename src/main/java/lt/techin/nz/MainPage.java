@@ -2,6 +2,7 @@ package lt.techin.nz;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 public class MainPage extends BasePage{
@@ -25,6 +26,8 @@ public class MainPage extends BasePage{
     }
 
     public void setButtonShowItemsAsLis() {
+        new Actions(driver).scrollToElement(buttonShowItemsAsLis).perform();
         buttonShowItemsAsLis.click();
     }
+
 }

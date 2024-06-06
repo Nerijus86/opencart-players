@@ -13,8 +13,7 @@ public class UITest extends BaseTest {
 
         mainPage.setButtonMP3Players();
         mainPage.setButtonShowAllMP3Players();
-        Thread.sleep(Duration.ofSeconds(5));//pakeisti į wait
         mainPage.setButtonShowItemsAsLis();
-        Thread.sleep(Duration.ofSeconds(5));
+        Thread.sleep(Duration.ofSeconds(5));//ištrinti
     }
 }
