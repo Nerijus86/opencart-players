@@ -45,4 +45,9 @@ public class MP3PlayersPage extends BasePage {
         return driver.findElement(By.linkText(itemName)).isDisplayed();
     }
 
+    public void setLinkItem(String itemName) {
+        new Actions(driver).scrollToElement(driver.findElement(By.linkText(itemName))).perform();
+        driver.findElement(By.linkText(itemName)).click();
+    }
+
 }
